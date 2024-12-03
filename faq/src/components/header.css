@@ -1,0 +1,29 @@
+ 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    background-color: rgba(205, 205, 51, 0.75); /* Color amarillo con 50% de transparencia */
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+
+  .logo img {
+    width: 200px;
+  }
+  
+  .nav a {
+    margin: 0 60px;
+    text-decoration: none;
+    color: #1f3464;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
