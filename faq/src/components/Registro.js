@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Registro.css';
 
 const Registro = () => {
   const [formData, setFormData] = useState({
@@ -23,37 +24,70 @@ const Registro = () => {
 
   return (
     <div className="registro-container">
-      <h2>Formulario de Registro</h2>
+      <h2>Registro De Preguntas Frecuentes</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="nombre">Nombre</label>
+          <label htmlFor="Error">Pregunta o Novedad</label>
           <input
             type="text"
-            id="nombre"
-            name="nombre"
-            value={formData.nombre}
+            id="Error"
+            name="Error"
+            value={formData.Error}
             onChange={handleChange}
             required
           />
         </div>
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="erro_codigo">Codigo</label>
           <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            type="text"
+            id="erro_codigo"
+            name="erro_codigo"
+            value={formData.erro_codigo}
             onChange={handleChange}
             required
           />
         </div>
         <div>
-          <label htmlFor="contraseña">Contraseña</label>
+          <label htmlFor="descripcion">Descripcion de la Novedad</label>
           <input
-            type="password"
-            id="contraseña"
-            name="contraseña"
+            type="text"
+            id="descripcion"
+            name="descripcion"
+            value={formData.descripcion}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="producto">producto</label>
+          <input
+            type="text"
+            id="id_producto"
+            name="producto"
             value={formData.contraseña}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="solucion">Solucion</label>
+          <input
+            type="text"
+            id="solucion"
+            name="solucion"
+            value={formData.solucion}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="link_video">Link del video </label>
+          <input
+            type="link"
+            id="link_video"
+            name="link_video"
+            value={formData.link_video}
             onChange={handleChange}
             required
           />
