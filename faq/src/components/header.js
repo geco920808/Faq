@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importa Link de react-router-dom para la navegación
 import './header.css';
 
 const Header = () => {
@@ -9,10 +10,12 @@ const Header = () => {
       </div>
       <nav className="nav">
         <a href="#home">Home</a>
-        <a href="#sammweb">SammWeb</a>
-        <a href="#sammapi">SammApi</a>
-        <a href="#apptecnicos">AppTecnicos</a>
-        <a href="#sammai">SammAI</a>
+        <a href="#sammWeb">SammWeb</a>
+        <a href="#sammNew">SammNew</a>
+        <a href="#sammApi">SammApi</a>
+        <a href="#appTecnicos">AppTecnicos</a>
+        <a href="#sammAi">SammAI</a>
+        <Link to="/registro">Registro</Link>  {/* Enlace a la página de registro */}
       </nav>
     </header>
   );
